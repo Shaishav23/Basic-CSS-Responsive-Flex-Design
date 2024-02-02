@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 3%;
+  text-align: center;
+  font-size: 29px;
+  background-color: aquamarine;
+}
+
+.navbar {
+  display: flex;
+  background-color: darkslategrey;
+}
+
+.navbar a {
+  padding: 14px 20px;
+  text-decoration: none;
+  color: antiquewhite;
+  text-align: center;
+}
+
+.navbar a:hover {
+  color: burlywood;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-left {
+  padding: 2%;
+  flex: 70%;
+}
+
+.content-right {
+  padding: 2%;
+  flex: 30%;
+  background-color: gainsboro;
+}
+
+.footer {
+  padding: 1%;
+  text-align: center;
+  background-color: lightslategrey;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar,
+  .content {
+    flex-direction: column;
+  }
+}
